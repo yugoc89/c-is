@@ -1,0 +1,47 @@
+<%-- block pageid --%>home<%-- endblock --%>
+<%-- block title --%>home<%-- endblock --%>
+
+<%-- extends '_layout.nunjucks' --%>
+
+<%-- block content --%>
+<main class="main main--about clear" id="main" role="main">
+	<h2>The power <br>of focus</h2>
+	<article class="content content--about">
+		<h3>About</h3>
+		<section class="section section-1">
+			<p class="large-text"><strong>You are the partner.</strong></p>
+			<p>Our concept is working together with our clients closely because we strongly believe that we can create wonderful pieces in this way.</p>
+			<p>The more you share your ideas with us, the more we can work to produce your own unique stories.</p>
+			<p>Since we've been working hard at creating intuitive websites that users love to use, we are sure that we can be your perfect storyteller to help you to express your message to the world.</p>
+		</section>
+		<section class="section section-2">
+			<p class="large-text"><strong>We are the storytellers.</strong></p>
+			<p>Since we’ve been creating the finest stories as much as we can do, we are assured that you’ll have a great piece that everyone in the world would be content.</p>
+			<p>"The only important thing about design is how it relates to people." - Victor Papanek</p>
+			<p>It is our basic concept to work in a global world and share our worldwide ideas with people. We'd love to share some of the ideas with you, it'll create brilliant things.</p>
+		</section>
+		<section class="section section-3">
+			<p class="large-text"><strong>Design is vital for us</strong></p>
+			<p>Based on variety of experiences with UI/UX, trendy or old design, or simple design, We'll use some trendy techniques and our own experiences to design based on your thoughts and passions.</p>
+			<p>We'd like to offer you full services to build your own brand.</p>
+			<div class="about__thumbnail" style="background-image: url(/assets/images/about/image1.png);">
+				<img src="/assets/images/about/image1.png" alt="IMAGE">
+			</div>
+		</section>
+		<section class="section section-4">
+			<div class="about__thumbnail" style="background-image: url(/assets/images/about/image2.png);">
+				<img src="/assets/images/about/image2.png" alt="IMAGE">
+			</div>
+			<p>We mainly operates from Tokyo. However we are all travellers and we’re more than willing to travel if needs be.</p>
+		</section>
+		<section class="section section--title">
+			<span><img src="/assets/images/about/content-title.png" alt="What does C stand for?"></span>
+		</section>
+	</article>
+	<p class="link-indicator"><img src="/assets/images/common/arrow-left.png" alt="ARROW"><a class="ajax-trigger" href="/services">The way to get what you need</a></p>
+</main>
+
+<%-- endblock --%>
+
+<%-- block scripts --%> 
+<%-- endblock --%>

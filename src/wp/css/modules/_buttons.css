@@ -1,0 +1,114 @@
+.link {
+	position: relative;
+	display: inline-block;
+	padding: 2px 0.5pc !important;
+	/*border: 2px solid #1a1a1a;*/
+	background-color: $green;
+	font-size: 14px;
+	color: $gray;
+	overflow: hidden;
+	&:before {
+		@mixin pseudo 0%, 102%;
+		top: 0;
+		left: 0;
+		background-color: $green;
+	}
+	&:hover {
+		&:before {
+			animation: lineEffect 0.4s cubic-bezier(.09,.57,.49,.9) 1 both;
+		}
+	}
+	&--home {
+		padding: 8px 16px;
+		color: $bg-colour;
+		background-color: #000;
+		font-weight: bold;
+		font-family: $sub-font;
+		&:before {
+			background-color: #000;
+		}
+	}
+}
+
+.button {
+	&.clicked {
+		animation: blink 1s linear infinite normal;
+	}
+	&--back-history {
+		@mixin hide;
+	}
+	&--close {
+		position: absolute;
+		top: 6px;
+		right: 1%;
+		width: 46px;
+		height: 24px;
+		font-size: 0.800em;
+		z-index: 14;
+		transition: right .4s ease-in-out-circ;
+		cursor: pointer;
+		overflow: hidden;
+		i {
+			position: absolute;
+			top: 38%;
+			left: 0;
+			width: 23px;
+			height: 2px;
+			margin: auto;
+			background-color: transparent;
+			&:before, &:after {
+				@mixin pseudo 100%, 100%;
+				top: 0;
+				left: 0;
+				background-color: $sub-colour;
+			}
+			&:before {
+				transform: rotate(45deg);
+			}
+			&:after {
+				transform: rotate(-45deg);
+			}
+		}
+		&:before {
+			@mixin pseudo 36px, 10px;
+			@mixin CisGradationHol;
+			right: 0;
+			bottom: 0;
+			transition: height .4s ease-in-out-circ;
+		}
+	}
+}
+@keyframes lineCloseEffect {
+	0% {
+		transform: translateX(0) rotate(45deg);
+	}
+	100% {
+		transform: translateX(20%) rotate(45deg);
+	}
+}
+.ajax-trigger--single {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	overflow: hidden;
+}
+.single-post__close {
+	position: fixed;
+	top: 23px;
+}
+
+#icon-facebook:hover path {
+	fill: #3B5998;
+}
+#icon-twitter:hover path {
+	fill: #55acee;
+}
+
+@keyframes blink{
+	0% {opacity:0.6;}
+	10% {opacity:1;}
+	100% {opacity:0.6;}
+}

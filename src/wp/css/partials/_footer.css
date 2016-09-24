@@ -1,0 +1,13 @@
+.footer {
+	
+}
+
+.page-footer {
+	&--services {
+		position: relative;
+		width: 90%;
+		margin: auto;
+		height: 120px;
+		/*background-color: $green;*/
+	}
+}

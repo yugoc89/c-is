@@ -1,0 +1,207 @@
+.navigation {
+	position: absolute;
+	left: 140px;
+	top: -0.2em;
+	transform: translateY(-400%);
+	z-index: 99;
+	a {
+		position: relative;
+		color: $main-colour;
+	}
+	li {
+		position: relative;
+		display: inline-block;
+		width: ;
+		margin: 0 1.6em;
+		&:hover {
+			i {
+				opacity: 1;
+			}
+		}
+	}
+	i {
+		position: absolute;
+		top: 4%;
+		bottom: 0;
+		left: -8%;
+		right: 0;
+		width: calc(100% + 1.3em);
+		height: 20%;
+		margin: auto;
+		opacity: 0;
+		background-color: $deep-green;
+		z-index: -1;
+	}
+}
+
+.navigation-trigger {
+	position: absolute;
+	top: -0.2em;
+	left: 0;
+	width: 5.2em;
+	padding-right: 0.6em;
+	padding-left: 2%;
+	color: $main-colour;
+	font-size: 1.125em;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+	z-index: 12;
+	&:before {
+		@mixin pseudo 110%, 0.92em;
+		@mixin CisGradationHol;
+		/*bottom: 0.5em;*/
+		bottom: 0;
+		left: 0;
+		transition: width 0.3s ease-in;
+	}
+	span {
+		display: inline-block;
+		position: relative;
+		top: 0.2em;
+		overflow: hidden;
+		line-height: 1;
+		z-index: 3;
+		&:before {
+			@mixin pseudo 0, 2px;
+			top: 8px;
+			left: 0;
+			background-color: #000;
+			transition: width 0.3s ease-in;
+		}
+	}
+	&.active {
+		&:before {
+			width: 600px;
+			z-index: 2;
+		}
+		span {
+			&:before {
+				width: 100%;
+			}
+		}
+	}
+	&:hover {
+		span {
+			&:before {
+				animation: lineEffect 0.4s cubic-bezier(.09,.57,.49,.9) 1 both;
+			}
+		}
+	}
+}
+
+.works-line {
+	position: fixed;
+	bottom: 0;
+	right: 50%;
+	width: 0.06em;
+	height: 86.6%;
+	background-color: $main-colour;
+	/*opacity: 0.2;*/
+	z-index: -1;
+}
+.category-nav, .year-nav {
+	position: fixed;
+	text-align: right;
+	font-size: 1.042em;
+	z-index: 10;
+	h6 {
+		margin-bottom: 1em;
+		color: $sub-colour;
+	}
+	ul {
+		position: relative;
+		font-size: 0.925em;
+		font-weight: normal;
+		font-family: $sub-font;
+		z-index: 2;
+	}
+	li {
+		margin-bottom: 0.15em;
+	}
+	a {
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		color: $main-colour;
+		&:before {
+			@mixin pseudo 2em, 1px;
+			top: 0;
+			bottom: 0;
+			width: 0;
+			margin: auto;
+			background-color: $deep-green;
+		}
+		&.active, &:hover {
+			color: $deep-green;
+			&:before {
+				width: 2.4em;
+			}
+		}
+	}
+}
+.category-nav {
+	top: 16.2%;
+	left: 41%;
+	h6 {
+		margin-right: -1.4em;
+	}
+	a {
+		&:before {
+			left: auto;
+			right: -3.8em;
+		}
+	}
+}
+.year-nav {
+	top: 50%;
+	left: 52.4%;
+	h6 {
+		text-align: left;
+	}
+	a {
+		&:before {
+			left: -3.8em;
+			right: auto;
+		}
+	}
+}
+
+.scroll-arrows {
+	position: fixed;
+	bottom: 6%;
+	right: 3.94%;
+	width: 1em;
+	height: 6em;
+	&:before {
+		content: 'DOWN';
+		position: absolute;
+		bottom: -4.5px;
+		right: -240%;
+		font-size: 0.64em;
+	}
+	.arrow-down {
+		position: absolute;
+		width: 1px;
+		height: 6em;
+		background-color: $main-colour;
+		&:before {
+			@mixin pseudo 14px, 14px;
+			top: 0;
+			left: -6px;
+			margin: auto;
+			background-color: $deep-green;
+			border-radius: 50%;
+			animation: up-down 2.2s 1s cubic-bezier(.09,.57,.49,.9) infinite both;
+		}
+	}
+}
+
+@keyframes up-down {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}

@@ -1,0 +1,44 @@
+<%-- block pageid --%>home<%-- endblock --%>
+<%-- block title --%>home<%-- endblock --%>
+
+<%-- extends '_layout.nunjucks' --%>
+
+<%-- block content --%>
+<main class="main main--home clear" id="main" role="main">
+	<div class="center--vertical">
+		<h1><img src="/assets/images/common/main-logo.png"></h1>
+		<h2>C can be anything you could imagine</h2>
+		<a href="mailto:info@c-is.co">Contact</a>
+	</div>
+</main>
+
+<%-- endblock --%>
+
+<%-- block scripts --%> 
+<script type="text/javascript">
+function Redirect(){
+	//if (screen.width < 1081 || (navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+		var ref = document.referrer;
+		var url1 = 'http://c-is.co/mates/y/';
+		var url2 = 'http://yugoc89.worlders.co.uk';
+		var urls = new Array(url1,url2);
+		var n = ref.match(urls[0]);
+		var m = ref.match(urls[1]);
+		if ((m!==null) || (n!==null)) {
+			stop();
+		} else if (ref==='') {
+			var r = confirm("Jump to the portfolio page");
+			if (r===true) {
+				window.location = url2;
+			}
+			else {
+				stop();
+			}
+		} else {
+			window.location = url2;
+		} 
+	//}
+}
+window.onload = Redirect;
+</script>
+<%-- endblock --%>

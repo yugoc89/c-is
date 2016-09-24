@@ -1,0 +1,85 @@
+<%-- block pageid --%>home<%-- endblock --%>
+<%-- block title --%>home<%-- endblock --%>
+
+<%-- extends '_layout.nunjucks' --%>
+
+<%-- block content --%>
+<main class="main main--services clear" id="main" role="main">
+	<article class="content content--services top clear">
+		<section class="section service-outline service-outline--title">
+			<div class="headings">
+				<h2><span>idea dispatch<br>from here</span></h2>
+				<h3>Our Services</h3>
+			</div>
+		</section>
+		<div class="section service-outline">
+			<p>You've got so many brilliant ideas, but don't know how to experess them effectively?</p>
+			<strong class="service-outline__heading">Let's have a kick start<br>then accelerate them.</strong>
+			<p>We can help you to put them onto the start position and make a brilliant dash. There are several ways to archieve a goal and we can adjust a process depending on what/how you need. Let's have a think about how we can improve your brand using the 6 fundamental ways of enhancement.</p>
+		</div>
+		<div class="section service-outline">
+			<p>We mainly focus on a branding design including web and graphic design. We shall take hands to make a good brand plan and set a goal together.</p>
+			<strong class="service-outline__heading">Make things unique</strong>
+			<p>If you are a start-up, you'd need a website and business card for the basic, then maybe we can create an orginal mug cup or stationaries. We'll be your brilliant company to set up an unique and fun brand together.</p>
+		</div>
+		<div class="services-headline">
+			<img src="/assets/images/services/heading-text_1.png">
+			<!-- <span class="services-headline__first">The</span>
+			<span class="services-headline__second">6</span>
+			<span class="services-headline__third">ways</span> -->
+		</div>
+	</article>
+	<article class="content content--services bottom">
+		<div class="storyline" id="storyline--services"></div>
+		<div class="wrapper clear">
+			<div class="bg--business"><img src="/assets/images/services/image2.png"></div>
+			<section class="section--service section section-1 left">
+				<h2>We can boost<br><span class="text-small">your features</span></h2>
+				<div class="section-inner">
+					<p>Have a look at the 6 ways of boost. We’ve been involved with designing brands and helped creating its identities<br>We shall not work within boundaries and the more you share your ideas with us, the more effective we could be.</p>
+
+					<p>When we say we're a full service branding design agency, we mean a full service and if it’s not listed let's talk.</p>
+				</div>
+			</section>
+			<section class="section--service section section-2 left">
+				<h4><strong>Branding</strong> Design</h4>
+				<p>We produce and deliver exceptional branding tools from beginning to end that are tailored to your company branding guidelines.</p>
+
+				<p>Also we provide brand guidelines that defines the set of standards for your business. It'll help you to figure out what your brand is like and how you can improve it in the future.</p>
+			</section>
+		</div>
+		<section class="section--service section section-3 services-lists">
+			<ul class="services-lists-inner">
+				<li class="services-lists__item">
+					<h5>Web Design</h5>
+					<p>We specialise the unique design and well constructed, creative web animation.</p>
+					<div class="white-wall"></div>
+				</li>
+				<li class="services-lists__item">
+					<h5>Print Media</h5>
+					<p>Business cards, brochures, flyers or maybe your coffee mug. We produce conceptually unique products to help to enhance your brand identity.</p>
+				</li>
+				<li class="services-lists__item">
+					<h5>Web development</h5>
+					<p>We focus on building easy-to-use interfaces, high-performance responsive and interactive websites. </p>
+				</li>
+				<li class="services-lists__item">
+					<h5>CMS &amp; E-commerce</h5>
+					<p>We provide you with easy-to-use contents such as WordPress and Magento to help your business grow and we are always there to help you with SEO and continuous support management. </p>
+				</li>
+				<li class="services-lists__item">
+					<h5>SEO</h5>
+					<p>We work closely with our clients to help them communicate their visions, and provided continuous site optimization based on SEO analytics to help you and your business grow.</p>
+				</li>
+			</ul>
+		</section>
+	</article>
+	<footer class="page-footer page-footer--services">
+		<p class="link-indicator link-indicator--services"><a class="ajax-trigger" href="/contact">Write a message to us</a><img src="/assets/images/common/arrow-right.png" alt="ARROW"></p>
+	</footer>
+</main>
+
+<%-- endblock --%>
+
+<%-- block scripts --%> 
+<%-- endblock --%>
